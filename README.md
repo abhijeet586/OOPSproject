@@ -1,6 +1,3 @@
-
-Create 3 empty files in the same folder: Movies.txt, Seats.txt, Bookings.txt.
-
-Open a new terminal in VS Code (`Ctrl + ``).
-
-Compile and run the code.
+Compile and Run the code for backend...
+If u want to experience the mimic version of backend on frontend run the html file..
+Or this LINK : https://movieplexapvr.ccbp.tech/
