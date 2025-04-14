@@ -1,4 +1,4 @@
-//MOVIE PLEX: A NEW GEN MOVIE TICKET BOOKING EXPERIENCE::::
+//CINEMATE: A NEW GEN MOVIE TICKET BOOKING EXPERIENCE::::
 //Made by : ABHIJEET(24BDE0015)...... PRATYUSH(24BIT0596) ...... VAAMAN(24BDE0067)...... RIDHI(24BDE0171)
 
 #include <iostream> 
@@ -6,12 +6,11 @@
 #include <string> 
 using namespace std;
 
-// Base class for users like Admin or Customer
 class User {
 protected:
-    int id; // User ID
-    string name; // User’s name
-    string role; // Admin or Customer
+    int id; 
+    string name; 
+    string role; 
 public:
 
     User(int userId, string userName, string userRole) {
@@ -130,7 +129,7 @@ public:
             }
         }
 
-        // Now we also have to save the booking details to provide our customer a proof of booking..
+        // Now we also have to save the booking details to provide our customer a proof of booking....
         ofstream file("Bookings.txt", ios::app);
         file << name << " booked: " << movie << " | Seat: " << seatNum << " | Timing: " << timing << " | Popcorn: " << (popcorn ? "Yes" : "No") << " | Total Price: " << totalPrice << endl;
         cout << "Booking successful! Change: Rs." << payment - totalPrice << endl;
